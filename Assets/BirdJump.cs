@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//씬 변경을 위해서는 UnitiEngine안에 잇는SceneManagement를 추가 해줘야 한다.
+using UnityEngine.SceneManagement;
 
 //c#의 클래스 정의. MonoBehaviour를 상속받앗다.
 public class BirdJump : MonoBehaviour
@@ -28,7 +30,7 @@ public class BirdJump : MonoBehaviour
     // Update 는 계속 실행된다. 매 프레임마다 코드를 검사한다.
     void Update()
     {
-         Debug.Log("Update 입니다.");
+      
          //0은 마우스 왼쪽 버튼을 의미.
          if(Input.GetMouseButtonDown(0)){ 
              //velocity 는 속도를 나타내는 속성이다.
@@ -37,7 +39,14 @@ public class BirdJump : MonoBehaviour
              //Vector2는 이차원 좌표 (0,1)의미한다. *3했으므로 (0,3)
          }
     }
+    //
+    private void OnCollisionEnter2D(Collision2D other) {
+        SceneManager.LoadScene("GameOverScene");
+        
+    }
 }
+
+
 
     //  1. Rigidbody2D 클래스를 가진 rb 변수를 선언해준다.
     //  2. Start()안에서 rb변수에 GetComponent로 Rigidbody2D를 담아준다
