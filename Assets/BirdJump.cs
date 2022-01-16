@@ -39,8 +39,14 @@ public class BirdJump : MonoBehaviour
              //Vector2는 이차원 좌표 (0,1)의미한다. *3했으므로 (0,3)
          }
     }
-    //
+   
+    //부딪친다면
     private void OnCollisionEnter2D(Collision2D other) {
+        //Score파일 안에 있는 static score
+        //현재 점수가 최고점수보다 높으면 현재점수를 최고점수로 넣어준다.
+        if(Score.score > Score.Bestscore){
+            Score.Bestscore = Score.score;
+        }
         SceneManager.LoadScene("GameOverScene");
         
     }

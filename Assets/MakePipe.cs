@@ -30,7 +30,7 @@ public class MakePipe : MonoBehaviour
         //타이머를 다시 0으로 초기화 시켜준다.
         timer = 0;
         //newpipe를 5초 뒤에 파괴해라.
-        Destroy(newpipe, 5.0f);
+        Destroy(newpipe, 10.0f);
 
 
        }

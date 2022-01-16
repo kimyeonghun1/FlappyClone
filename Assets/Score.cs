@@ -8,9 +8,11 @@ public class Score : MonoBehaviour
 {
     //
     public static int score = 0;
+    public static int Bestscore = 0;
     void Start()
     {
-        
+        //시작시 점수를 0으로 초기화시켜줘야 한다.
+        score = 0;
     }
 
     // Update is called once per frame
