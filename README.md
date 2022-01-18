@@ -25,7 +25,7 @@ if(Input.GetmouseButtonDown(0)){
 
 장애물에 부딪쳤을때 Collider 속성을 충돌체들끼리 부딪쳤을때 GameOverScene이 로드되고 게임이 끝납니다.
 
-```
+```c#
 private void OnCollisionEnter2D(Collision2D other){
 SceneManager.LoadScene("GameOverScene")
 }
