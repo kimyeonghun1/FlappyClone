@@ -6,7 +6,7 @@
 
 클릭을 하면 새가 날며 장애물 사이를 통과하면 점수를 얻는 간단한 구조입니다.
 
-![image-20220118174055015](../images/README/image-20220118174055015.png)
+![](https://user-images.githubusercontent.com/92971200/149912484-b302fe91-c786-441b-8fcc-9edb1a9ffe0b.png)
 
 
 
@@ -37,7 +37,7 @@ SceneManager.LoadScene("GameOverScene")
 
 게임 오버 화면은 다음과 같습니다.
 
-![image-20220118174055015](../images/README/image-20220118174055015-16424983938561.png)
+![](https://user-images.githubusercontent.com/92971200/149912469-eeaf86e1-6e72-4b09-ab42-b18b4ad72896.png)
 
 Score파일을 따로 분리해서 만든 후 static으로 score변수를 선언해 ScoreUp파일에서도 사용 할수 있도록 했습니다. 그 후 ScoreUp파일에 아래와 같은 코드를 이용해 Collider 통과시 점수가 1씩 올라가도록 했습니다.
 
@@ -49,7 +49,7 @@ private void OnTriggerEnter2D(collider2D other){
 
 
 
-![image-20220118180439925](../images/README/image-20220118180439925-16424984072662.png)
+![](![image-20220118180439925](https://user-images.githubusercontent.com/92971200/149912499-8bc7821e-f9f6-4708-bfd0-6515c1f9e1a5.png)
 
 
 
